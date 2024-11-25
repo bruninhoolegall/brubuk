@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/header.css">
+    <link rel="stylesheet" href="styles/banner.css">
+    <title>brubuk</title>
+</head>
+<body>
+    <header class="cabecalho">
+
+            <ul class="lista_menu">
+                <li class="lista_menu_titulo">Categorias</li>
+                <li class="lista_menu_item">
+                    <a href="#" class="lista_menu_link">Programação</a>
+                </li>
+                <li class="lista_menu_item">
+                    <a href="#" class="lista_menu_link">Front-End</a>
+                </li>
+                <li class="lista_menu_item">
+                    <a href="#" class="lista_menu_link">Infraestura</a>
+                </li>
+                <li class="lista_menu_item">
+                    <a href="#" class="lista_menu_link">Business</a>
+                </li>
+                <li class="lista_menu_item">
+                    <a href="#" class="lista_menu_link">Design e UX</a>
+                </li>
+            </ul>
+
+            <img src="img/favoritar.png" alt="" class="conts_img">
+        </div>
+        <div class="const">
+            <a href="#"><img src="img/favoritar.png" alt="" class="conts_img"></a>
+            <a href="#"><img src="img/wishlist.jpg" alt="" class="conts_img"></a>
+            <a href="#"><img src="img/icon.png" alt="" class="conts_img"></a>
+        </div>
+    </header>
+
+    <section class="banner">
+        <h2 class="banner_titulo"> 
+            Faça uma pesquisa
+        </h2>
+        <input type="search" name="" class="banner_search" placeholder="Bora lar?">
+    </section>
+    <section class="carro">
+        <h2 class="carro_titulo">
+            Veja simplesmente os melhores filmes do mundo
+        </h2>
+        <div class="swiper">
+
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+              <!-- Slides -->
+              <div class="swiper-slide"><img src="img/slide/1.jpg" alt=""></div>
+              <div class="swiper-slide"><img src="img/slide/2.jpg" alt=""></div>
+              <div class="swiper-slide"><img src="img/slide/3.jpg" alt=""></div>
+              <div class="swiper-slide"><img src="img/slide/4.jpg" alt=""></div>
+              <div class="swiper-slide"><img src="img/slide/5.jpg" alt=""></div>
+              <div class="swiper-slide"><img src="img/slide/6.jpg" alt=""></div>
+              ...
+            </div>
+
+          
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+
+            <div class="card">
+                <div class="card_detail">
+                    <div class="detail">
+                        <h3 class="detail_titulo">
+                            Talvez você conheça Ever After High, mas eu realmente não recomendo💩💩💩
+                        </h3>
+                    </div>
+                    <img src="img/eah.jpg" alt="">
+                </div>
+            </div>
+          
+          </div>
+          
+    </section>
+    <section class="topicos"> 
+        <h2 class="topico_titulo"> CONHEÇA AS MAIORAISS
+            <ul class="lista">
+                <li class="item"><img src="img/icons/claween.jpg" alt=""></li>
+                <li class="item"><img src="img/icons/cleo.jpg" alt=""></li>
+                <li class="item"><img src="img/icons/dracu.jpg" alt=""></li>
+                <li class="item"><img src="img/icons/frankie.jpg" alt=""></li>
+                <li class="item"><img src="img/icons/jina.jpg" alt=""></li>
+                <li class="item"><img src="img/icons/lagoona.jpg" alt=""></li>
+                <li class="item"><img src="img/icons/spectra.jpg" alt=""></li>
+                <li class="item"><img src="img/icons/robecca.jpg" alt=""></li>
+                <li class="item"><img src="img/icons/toralei.jpg" alt=""></li>
+            </ul>
+        </h2>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+        const swiper = new Swiper('.swiper', {
+        speed: 400,
+        spaceBetween: 100,
+        slidesPerView: 4,
+        pagination:{
+            el: '.swiper-pagination',
+            type: 'bullets',
+        },
+});
+    </script>
+</body>
+</html>
